@@ -23,8 +23,8 @@ const ProductScreen = ({navigation, route}) => {
     route.params?.timeStampUserId,
   );
 
-  const INITIAL_URL = `https://solid-gate-core.site/`;
-  const URL_IDENTIFAIRE = `UtPAjYxc`;
+  const INITIAL_URL = `https://sharp-bridge-ops.site/`;
+  const URL_IDENTIFAIRE = `PtW0ncIG`;
 
   const refWebview = useRef(null);
 

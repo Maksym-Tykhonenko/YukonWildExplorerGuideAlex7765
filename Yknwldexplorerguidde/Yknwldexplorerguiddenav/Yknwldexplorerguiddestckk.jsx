@@ -63,10 +63,10 @@ const Yknwldexplorerguiddestckk = () => {
   console.log('cloacaPass==>', cloacaPass);
   const [customUserAgent, setCustomUserAgent] = useState(null);
 
-  const INITIAL_URL = `https://solid-gate-core.site/`;
-  const URL_IDENTIFAIRE = `UtPAjYxc`;
+  const INITIAL_URL = `https://sharp-bridge-ops.site/`;
+  const URL_IDENTIFAIRE = `PtW0ncIG`;
 
-  const ONESIGNAL_KEY = `977a79ba-23ee-4b34-bad3-c9fae2f33e55`;
+  const ONESIGNAL_KEY = `3f9ed608-d6dd-42e6-a20e-101eede7d2df`;
 
   const TARGET_DATA = new Date(2026, 2, 30, 8, 8, 0);
 
