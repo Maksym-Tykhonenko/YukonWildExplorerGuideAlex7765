@@ -16,6 +16,7 @@ import { LogLevel, OneSignal } from 'react-native-onesignal';
 import appsFlyer from 'react-native-appsflyer';
 import AppleAdsAttribution from '@vladikstyle/react-native-apple-ads-attribution';
 import DeviceInfo from 'react-native-device-info';
+import { getTrackingStatus, requestTrackingPermission } from 'react-native-tracking-transparency';
 
 const Yknwldexplorerguiddestckk = () => {
   const [route, setRoute] = useState(false);
@@ -68,7 +69,18 @@ const Yknwldexplorerguiddestckk = () => {
 
   const ONESIGNAL_KEY = `3f9ed608-d6dd-42e6-a20e-101eede7d2df`;
 
-  const TARGET_DATA = new Date(2026, 2, 30, 8, 8, 0);
+  const TARGET_DATA = new Date(2026, 4, 1, 8, 8, 0);
+
+  useEffect(() => {
+    const targetData = TARGET_DATA;//дата з якої поч працювати webView
+    const currentData = new Date(); //текущая дата
+
+    if (currentData <= targetData) {
+      requestTrackingPermission()
+    }
+    
+  }, [])
+  
 
   useEffect(() => {
     const fetchData = async () => {
